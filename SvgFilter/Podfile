@@ -1,0 +1,6 @@
+platform :osx, '10.15'
+use_frameworks!
+
+target 'SvgFilter' do
+  pod 'ZIPFoundation', '~> 0.9'
+end
