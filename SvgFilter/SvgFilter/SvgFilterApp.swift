@@ -11,7 +11,11 @@ import SwiftUI
 struct SvgFilterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if #available(macOS 12.0, *) {
+                ContentView()
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
 }
